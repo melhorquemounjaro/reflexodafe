@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflexo da Fé</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reflexo da Fé em Deus — Loja de fé cristã</title>
+<meta name="description" content="Loja cristã com bíblias, devocionais, promoções e combos. Comece pelo Devocional da Mulher Fervorosa: 15 dias com as mulheres da Bíblia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Karla:ital,wght@0,300..700;1,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-    <h1>REFLEXO DA FE</h1>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
+<header class="topo">
+  <a class="marca" href="#/">
+    <span class="marca-simbolo" aria-hidden="true"></span>
+    Reflexo da Fé
+  </a>
+  <nav class="menu" aria-label="Principal">
+    <a href="#/">Início</a>
+    <a href="#/produtos">Produtos</a>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <!-- ============================ INÍCIO ============================ -->
+  <section class="rota" data-rota="inicio" hidden>
+
+    <div class="hero">
+      <p class="eyebrow">Loja cristã · Brasil</p>
+
+      <div class="espelho">
+        <h1 class="wordmark">Reflexo da Fé<span>em Deus</span></h1>
+        <div class="wordmark-reflexo" aria-hidden="true">Reflexo da Fé<span>em Deus</span></div>
+      </div>
+
+      <p class="subtitulo">Sua loja de fé cristã top 1 do Brasil</p>
+
+      <figure class="versiculo">
+        <blockquote>Todos nós refletimos a glória do Senhor e somos transformados à sua imagem.</blockquote>
+        <figcaption>2 Coríntios 3.18</figcaption>
+      </figure>
+
+      <a class="botao botao-principal" href="#/produtos">Ver produtos</a>
+    </div>
+
+    <!-- vitrine ------------------------------------------------------ -->
+    <section class="bloco" aria-labelledby="tit-vitrine">
+      <div class="faixa faixa-centro">
+        <h2 class="titulo-secao" id="tit-vitrine">Na loja agora</h2>
+        <p class="apoio">Arraste para o lado ou use as setas para ver de perto.</p>
+      </div>
+
+      <div class="vitrine">
+        <button class="seta seta-ant" type="button" aria-label="Item anterior">&#8592;</button>
+        <div class="trilho" id="vitrine" tabindex="0" role="region" aria-label="Vitrine de produtos"></div>
+        <button class="seta seta-prox" type="button" aria-label="Próximo item">&#8594;</button>
+      </div>
+
+      <div class="pontos" id="pontos"></div>
+    </section>
+
+    <!-- avaliações --------------------------------------------------- -->
+    <section class="bloco" aria-labelledby="tit-avaliacoes">
+      <div class="faixa faixa-centro">
+        <h2 class="titulo-secao" id="tit-avaliacoes">O que nossos clientes dizem</h2>
+        <div class="resumo-nota" id="resumo-nota"></div>
+      </div>
+      <div class="avaliacoes" id="avaliacoes-inicio"></div>
+    </section>
+
+  </section>
+
+  <!-- ============================ PRODUTOS ============================ -->
+  <section class="rota" data-rota="produtos" hidden>
+    <div class="faixa">
+      <h2 class="titulo-secao">Produtos</h2>
+      <p class="apoio">Materiais para estudar a Bíblia, orar e caminhar com constância.</p>
+    </div>
+
+    <div class="filtros" role="group" aria-label="Filtrar por categoria" id="filtros"></div>
+
+    <div class="grade" id="grade"></div>
+    <div class="vazio" id="vazio" hidden></div>
+  </section>
+
+  <!-- ============================ PRODUTO ============================ -->
+  <section class="rota" data-rota="produto" hidden>
+    <a class="voltar" href="#/produtos">Voltar aos produtos</a>
+    <article class="produto" id="produto"></article>
+
+    <section class="bloco" aria-labelledby="tit-aval-produto">
+      <div class="faixa faixa-centro">
+        <h2 class="titulo-secao" id="tit-aval-produto">Avaliações de quem já leu</h2>
+        <div class="resumo-nota" id="resumo-nota-produto"></div>
+      </div>
+      <div class="avaliacoes" id="avaliacoes-produto"></div>
+    </section>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <p class="rodape-marca">Reflexo da Fé em Deus</p>
+  <p>Sua loja de fé cristã top 1 do Brasil</p>
+</footer>
+
+<script src="assets/app.js"></script>
 </body>
 </html>
