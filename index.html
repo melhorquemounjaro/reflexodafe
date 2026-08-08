@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reflexo da Fé em Deus — Loja de fé cristã</title>
-<meta name="description" content="Loja cristã com bíblias, devocionais, promoções e combos. Comece pelo Devocional da Mulher Fervorosa: 15 dias com as mulheres da Bíblia.">
+<meta name="description" content="Loja cristã com bíblias, devocionais, promoções e combos. Devocionais de estudo bíblico para mulheres, homens e casais.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Karla:ital,wght@0,300..700;1,300..500&display=swap" rel="stylesheet">
@@ -14,14 +14,22 @@
 
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
+<!-- barra de anúncio ------------------------------------------------ -->
+<div class="anuncio" id="anuncio">
+  <span class="anuncio-fogo" aria-hidden="true">🔥</span>
+  <span class="anuncio-texto">Semana da Palavra — até 60% de desconto</span>
+  <span class="anuncio-contador" id="anuncio-contador"></span>
+</div>
+
 <header class="topo">
   <a class="marca" href="#/">
     <span class="marca-simbolo" aria-hidden="true"></span>
     Reflexo da Fé
   </a>
   <nav class="menu" aria-label="Principal">
-    <a href="#/">Início</a>
-    <a href="#/produtos">Produtos</a>
+    <a href="#/" data-nav="inicio">Início</a>
+    <a href="#/produtos" data-nav="produtos">Produtos</a>
+    <a href="#/contato" data-nav="contato">Contato</a>
   </nav>
 </header>
 
@@ -31,6 +39,14 @@
   <section class="rota" data-rota="inicio" hidden>
 
     <div class="hero">
+      <div class="hero-arco" aria-hidden="true">
+        <svg viewBox="0 0 240 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 300 V120 A100 100 0 0 1 220 120 V300" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M52 300 V132 A68 68 0 0 1 188 132 V300" stroke="currentColor" stroke-width="0.8"/>
+          <path d="M120 96 V232 M88 140 H152" stroke="currentColor" stroke-width="1.4"/>
+        </svg>
+      </div>
+
       <p class="eyebrow">Loja cristã · Brasil</p>
 
       <div class="espelho">
@@ -45,32 +61,79 @@
         <figcaption>2 Coríntios 3.18</figcaption>
       </figure>
 
-      <a class="botao botao-principal" href="#/produtos">Ver produtos</a>
+      <div class="hero-acoes">
+        <a class="botao botao-principal" href="#/produtos">Ver produtos</a>
+        <a class="botao botao-vazado" href="#/produtos/promocoes">Ver promoções</a>
+      </div>
+
+      <ul class="selos" aria-label="Informações da loja">
+        <li><strong id="selo-avaliacoes">—</strong> avaliações</li>
+        <li><strong id="selo-vendas">—</strong> materiais entregues</li>
+        <li><strong>PDF</strong> para ler e imprimir</li>
+      </ul>
     </div>
 
     <!-- vitrine ------------------------------------------------------ -->
     <section class="bloco" aria-labelledby="tit-vitrine">
       <div class="faixa faixa-centro">
+        <p class="eyebrow eyebrow-centro">Catálogo</p>
         <h2 class="titulo-secao" id="tit-vitrine">Na loja agora</h2>
-        <p class="apoio">Arraste para o lado ou use as setas para ver de perto.</p>
+        <p class="apoio">Arraste para o lado ou use as setas. Os itens em promoção estão marcados.</p>
       </div>
 
-      <div class="vitrine">
-        <button class="seta seta-ant" type="button" aria-label="Item anterior">&#8592;</button>
+      <div class="carrossel">
+        <button class="seta seta-ant" type="button" data-alvo="vitrine" aria-label="Item anterior">&#8592;</button>
         <div class="trilho" id="vitrine" tabindex="0" role="region" aria-label="Vitrine de produtos"></div>
-        <button class="seta seta-prox" type="button" aria-label="Próximo item">&#8594;</button>
+        <button class="seta seta-prox" type="button" data-alvo="vitrine" aria-label="Próximo item">&#8594;</button>
       </div>
-
-      <div class="pontos" id="pontos"></div>
+      <div class="pontos" id="vitrine-pontos"></div>
     </section>
 
-    <!-- avaliações --------------------------------------------------- -->
+    <!-- pilares ------------------------------------------------------ -->
+    <section class="bloco" aria-labelledby="tit-pilares">
+      <div class="faixa faixa-centro">
+        <p class="eyebrow eyebrow-centro">Como trabalhamos</p>
+        <h2 class="titulo-secao" id="tit-pilares">Estudo sério, sem atalho</h2>
+      </div>
+      <div class="pilares" id="pilares"></div>
+    </section>
+
+    <!-- versículo em faixa ------------------------------------------- -->
+    <section class="faixa-escura" aria-label="Versículo">
+      <div class="faixa-escura-orn" aria-hidden="true">
+        <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 20 H46 M74 20 H114" stroke="currentColor" stroke-width="1"/>
+          <path d="M60 8 L68 20 L60 32 L52 20 Z" stroke="currentColor" stroke-width="1"/>
+        </svg>
+      </div>
+      <blockquote>Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.</blockquote>
+      <cite>Salmo 119.105</cite>
+    </section>
+
+    <!-- depoimentos -------------------------------------------------- -->
     <section class="bloco" aria-labelledby="tit-avaliacoes">
       <div class="faixa faixa-centro">
-        <h2 class="titulo-secao" id="tit-avaliacoes">O que nossos clientes dizem</h2>
+        <p class="eyebrow eyebrow-centro">Depoimentos</p>
+        <h2 class="titulo-secao" id="tit-avaliacoes">O que estão dizendo</h2>
         <div class="resumo-nota" id="resumo-nota"></div>
       </div>
-      <div class="avaliacoes" id="avaliacoes-inicio"></div>
+
+      <div class="carrossel">
+        <button class="seta seta-ant" type="button" data-alvo="depoimentos" aria-label="Depoimento anterior">&#8592;</button>
+        <div class="trilho trilho-depoimentos" id="depoimentos" tabindex="0" role="region" aria-label="Depoimentos"></div>
+        <button class="seta seta-prox" type="button" data-alvo="depoimentos" aria-label="Próximo depoimento">&#8594;</button>
+      </div>
+      <div class="pontos" id="depoimentos-pontos"></div>
+    </section>
+
+    <!-- dúvidas ------------------------------------------------------ -->
+    <section class="bloco" aria-labelledby="tit-faq">
+      <div class="faixa faixa-centro">
+        <p class="eyebrow eyebrow-centro">Dúvidas</p>
+        <h2 class="titulo-secao" id="tit-faq">Perguntas frequentes</h2>
+      </div>
+      <div class="faq" id="faq"></div>
+      <p class="faq-saida">Ficou alguma dúvida? <a href="#/contato">Fale com a gente</a>.</p>
     </section>
 
   </section>
@@ -78,6 +141,7 @@
   <!-- ============================ PRODUTOS ============================ -->
   <section class="rota" data-rota="produtos" hidden>
     <div class="faixa">
+      <p class="eyebrow">Catálogo</p>
       <h2 class="titulo-secao">Produtos</h2>
       <p class="apoio">Materiais para estudar a Bíblia, orar e caminhar com constância.</p>
     </div>
@@ -95,20 +159,70 @@
 
     <section class="bloco" aria-labelledby="tit-aval-produto">
       <div class="faixa faixa-centro">
+        <p class="eyebrow eyebrow-centro">Depoimentos</p>
         <h2 class="titulo-secao" id="tit-aval-produto">Avaliações de quem já leu</h2>
         <div class="resumo-nota" id="resumo-nota-produto"></div>
       </div>
-      <div class="avaliacoes" id="avaliacoes-produto"></div>
+
+      <div class="carrossel">
+        <button class="seta seta-ant" type="button" data-alvo="depoimentos-produto" aria-label="Depoimento anterior">&#8592;</button>
+        <div class="trilho trilho-depoimentos" id="depoimentos-produto" tabindex="0" role="region" aria-label="Depoimentos do produto"></div>
+        <button class="seta seta-prox" type="button" data-alvo="depoimentos-produto" aria-label="Próximo depoimento">&#8594;</button>
+      </div>
+      <div class="pontos" id="depoimentos-produto-pontos"></div>
     </section>
+  </section>
+
+  <!-- ============================ CONTATO ============================ -->
+  <section class="rota" data-rota="contato" hidden>
+    <div class="faixa faixa-centro">
+      <p class="eyebrow eyebrow-centro">Fale com a gente</p>
+      <h2 class="titulo-secao">Contato</h2>
+      <p class="apoio">Problema no acesso, dúvida sobre um material ou pedido de oração —
+        escreva para o nosso e-mail. Respondemos em até 1 dia útil.</p>
+    </div>
+
+    <div class="contato">
+      <div class="contato-cartao">
+        <div class="contato-icone" aria-hidden="true">
+          <svg viewBox="0 0 48 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="46" height="32" rx="2" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M1 4 L24 20 L47 4" stroke="currentColor" stroke-width="1.4"/>
+          </svg>
+        </div>
+        <p class="contato-rotulo">E-mail</p>
+        <p class="contato-email">reflexodafe7@gmail.com</p>
+        <a class="botao botao-principal" id="botao-email"
+           href="mailto:reflexodafe7@gmail.com?subject=Contato%20pelo%20site%20Reflexo%20da%20F%C3%A9">
+          Escrever agora
+        </a>
+        <p class="contato-nota">O botão abre o seu aplicativo de e-mail com o endereço já preenchido.</p>
+      </div>
+
+      <div class="contato-lado">
+        <h3 class="contato-titulo">Escreva para nós sobre</h3>
+        <ul class="contato-lista" id="contato-assuntos"></ul>
+        <p class="contato-dica">Para agilizar, conte qual material você comprou e, se houver erro,
+          descreva o que aconteceu na tela.</p>
+      </div>
+    </div>
   </section>
 
 </main>
 
 <footer class="rodape">
+  <div class="rodape-orn" aria-hidden="true">
+    <svg viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 15 H48 M72 15 H110" stroke="currentColor" stroke-width="0.9"/>
+      <path d="M60 4 V26 M50 12 H70" stroke="currentColor" stroke-width="1.2"/>
+    </svg>
+  </div>
   <p class="rodape-marca">Reflexo da Fé em Deus</p>
   <p>Sua loja de fé cristã top 1 do Brasil</p>
+  <p class="rodape-contato"><a href="#/contato">Contato</a> · reflexodafe7@gmail.com</p>
 </footer>
 
+<script src="assets/dados.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
