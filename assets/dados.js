@@ -70,7 +70,7 @@ window.LOJA = (function () {
       linhaFina: "Vinte e um dias com os homens da Bíblia",
       categorias: ["devocionais", "promocoes"],
       categoriaNome: "Devocional",
-      preco: 39.90,
+      preco: 38.90,
       promo: promo(79.90),
       nota: 4.8,
       vendas: 187,
