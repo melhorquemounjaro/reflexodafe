@@ -127,7 +127,7 @@ window.LOJA = (function () {
         "Plano de continuidade de 30 dias",
         "65 páginas em PDF, formato A5 — leia no celular ou imprima"
       ],
-      checkout: null,
+      checkout: "https://pay.cakto.com.br/3354jkx_1030961",
       fotos: [
         { src: "assets/img/jovem-capa.jpg",            alt: "Capa do Devocional do Jovem Cristão" },
         { src: "assets/img/jovem-sumario.jpg",         alt: "Sumário com o roteiro dos dez dias" },
@@ -162,7 +162,7 @@ window.LOJA = (function () {
         "Três planos de continuidade (90, 90 e 30 dias)",
         "280 páginas no total, formato A5 — leia no celular ou imprima"
       ],
-      checkout: null,
+      checkout: "https://pay.cakto.com.br/rg2jshs_1030986",
       fotos: [
         { src: "assets/img/combo-familia-capas.jpg", alt: "Os três devocionais do combo lado a lado" },
         { src: "assets/img/capa.jpg",                alt: "Capa do Devocional da Mulher Fervorosa" },
@@ -195,7 +195,7 @@ window.LOJA = (function () {
         "Dois planos de continuidade de 90 dias",
         "215 páginas no total, formato A5 — leia no celular ou imprima"
       ],
-      checkout: null,
+      checkout: "https://pay.cakto.com.br/rgafekk_1029383",
       fotos: [
         { src: "assets/img/combo-capas.jpg",   alt: "Os dois devocionais do combo lado a lado" },
         { src: "assets/img/capa.jpg",          alt: "Capa do Devocional da Mulher Fervorosa" },
@@ -228,7 +228,7 @@ window.LOJA = (function () {
         "Planos de continuidade de 90 e 30 dias",
         "158 páginas no total, formato A5 — leia no celular ou imprima"
       ],
-      checkout: null,
+      checkout: "https://pay.cakto.com.br/3dzc7kj_1030978",
       fotos: [
         { src: "assets/img/combo-mae-filho-capas.jpg", alt: "Os dois devocionais do combo lado a lado" },
         { src: "assets/img/capa.jpg",                  alt: "Capa do Devocional da Mulher Fervorosa" },
@@ -261,7 +261,7 @@ window.LOJA = (function () {
         "Planos de continuidade de 90 e 30 dias",
         "187 páginas no total, formato A5 — leia no celular ou imprima"
       ],
-      checkout: null,
+      checkout: "https://pay.cakto.com.br/3buu5tj_1030967",
       fotos: [
         { src: "assets/img/combo-pai-filho-capas.jpg", alt: "Os dois devocionais do combo lado a lado" },
         { src: "assets/img/homem-capa.jpg",            alt: "Capa do Devocional do Homem Próspero" },
